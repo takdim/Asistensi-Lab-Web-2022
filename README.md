@@ -24,3 +24,4 @@
   Pesan commit yang dibuat diharapkan sesuai dengan hal yang dilakukan. Seperti "menambah tugas praktikum ..." atau "memperbaiki type di file ..."
 - Setelah perintah tersebut berhasil, silahkan membuka repository hasil fork kalian di github dan lakukan pull request ke repository ini. 
 - Apabila terdapat kesulitan, silahkan menghubungi asisten yang bersangkutan
+- Cara Mudah untuk push di repo setelah di fork itu bisa melalui website Github langsung saja, untuk tutorialnya silahkan [cek disini](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
