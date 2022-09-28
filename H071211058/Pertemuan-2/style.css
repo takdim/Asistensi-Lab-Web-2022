@@ -1,0 +1,103 @@
+.nav{  
+    background-color:rgb(99, 27, 27);  
+    padding: 5px;  
+    }  
+    
+    .nav li{  
+    list-style: none;  
+    display: inline-block;  
+    padding: 8px;  
+    }  
+    
+    .nav a{  
+    color: rgb(0, 0, 0);  
+    font-family: 'Reem Kufi Ink', sans-serif;
+
+    }             
+
+    .jumbotron{
+    position:static;
+    background: url(./img2.jpg) center;
+    width: 100%;
+    height: 340px;
+    background-size: cover;
+    overflow: hidden;
+    }
+
+    .jumbotron h1{
+    font-family: 'Reem Kufi Ink', sans-serif;
+    color: brown;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 140px;
+    text-decoration:underline;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    }
+
+    .jumbotron p{
+        font-family: 'Amiri Quran', serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+
+
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 99.8%);
+        }
+      
+      .flex-container > div {
+        background-color: #420707;
+        width: 40%;
+        margin: 40px;
+        height: 100%;
+        text-align: center;
+        line-height: 35px;
+        font-size: 30px;
+      }
+
+      .flex-container p{
+        font-family: 'Amiri Quran', serif;
+        margin: 45px;
+        color:aliceblue;
+      }
+
+      .flex-container h1{
+        font-family: 'Amiri Quran', serif;
+        margin: 35px;
+        letter-spacing: 4px;
+        color:aliceblue;
+        display: flex;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        justify-content: center;
+      }
+
+      .gambar {
+        width: 20%;
+      
+      }
+
+      .gambar > img{
+        width: 100%;
+  
+      }
+
+      .gambar:hover{
+        transform: scale(1.1);
+      }
+
+      .flex-container .gambar{
+        font-size: 30px;
+        background-color:#420707;
+      }
+      
+      .teks{
+        margin-top: -65px;
+        font-size: 30px;
+
+      }
