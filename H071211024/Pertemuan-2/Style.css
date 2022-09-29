@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(35, 39, 42);
+}
+
+li{
+    float: left;
+}
+
+li Navbar{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li Navbar:hover{
+    background-color: rgb(44, 47, 51);
+}
+
+.jumbotron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://www.wallpaperup.com/uploads/wallpapers/2015/04/15/662414/e2e768b629ed4347e44594b22589a629.jpg);
+    background-position: 50%;
+    background-size: cover;
+    padding: 250px;
+}
+
+.jumbotron h1{
+    color: rgb(255, 255, 255);
+}
+
+.Content{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.Content table{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    width: 65%;
+}
+
+.Content th{
+    text-align: left;
+    vertical-align: top;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image{
+    width: 20%;
+    margin: 0 25px;
+    border: 20px solid rgb(35, 39, 42);
+    transition: all .3s; 
+    background-color: rgb(35, 39, 42); 
+    color: rgb(255, 255, 255);
+}
+
+.image > img{
+    width: 100%;
+    
+}
+
+
+
+.image:hover{
+    border: 25px solid rgb(44, 47, 51);
+    background-color: rgb(44, 47, 51);
+}
