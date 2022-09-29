@@ -1,0 +1,118 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.turu{
+    background-color: aqua;
+}
+.fContainer{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+}
+.upstream{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgb(9, 148, 255);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+    align-items: center;
+    
+
+}
+.brand{
+    display: flex;
+    font-size: 25px;
+    flex-direction: row;
+}
+.name{
+    color: azure;
+    font-weight: 700;
+    align-items: center;
+    padding: 12;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation >li>a {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navigation >li >a:hover {
+    color: aqua;
+    transition: all;
+}
+.logo{
+    height: 80vh;
+    border: 0px solid;
+    background-image: url(/jumbo.jpg);
+    background-size: cover;
+    align-items: center;
+    position:relative;
+}
+.logo:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0, 221, 255, 0.29);
+}
+.welcome{
+    position: relative;
+    top: 230px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+div.asa {
+    column-count: 2;
+    align: justify;
+    text-align: justify;
+}
+
+.gal{
+    display: flex;
+}
+.gallery {
+    margin: 5px;
+    border: 0px solid #ccc;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image{
+    width: 20%;
+}
+.image > img{
+    width: 100%;
+}
+.image > p{
+    text-align: center;
+    font-weight: bold;
+}
