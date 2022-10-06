@@ -1,0 +1,11 @@
+    *{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;  
+    overflow-x: hidden;
+}
+
+.card-img-top{
+    width: 350px;
+    height: 250px;
+}
