@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal1</title>
+</head>
+<body>
+    <script>
+        var nama = prompt("Masukkan nama anda")
+        
+        if (nama.trim() == "" ) {
+            console.log("Masukkan Nama Anda terlebih dahulu")
+        } else {
+            var check1 = prompt("Apa anda siap lab praktikum? YES/NO")
+            if (check1 == "YES") {
+                var check2 = prompt("Apa TP anda telah selesai? YES/NO")
+                if (check2 == "YES") {
+                    var check3 = prompt("Apa anda ingat membawa laptop? YES/NO")
+                    if (check3 == "YES") {
+                        console.log("Selamat anda siap lab praktikum")
+                    } else if (check1 == "NO") {
+                        console.log("Ingat bawa laptop "+ nama)
+                    } else {
+                        console.log("Masukkan input yang benar")
+                    }
+                } else if (check2 == "NO") {
+                console.log("Kerjakan TP dulu "+ nama)
+                } else {
+                console.log("Masukkan input yang benar")
+                }
+            } else if (check1 == "NO") {
+                console.log("Siap siap dulu "+ nama)
+            } else {
+                console.log("Masukkan input yang benar")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal2</title>
+</head>
+<body>
+    <script>
+        var perhitungan = prompt("Apakah mau Penjumlahan atau Perkalian? +/x");
+        if (perhitungan == "x"){
+            console.log("Anda memilih perkalian")
+            var x = prompt("Anda ingin perkalian berapa?")
+            if (isNaN(x)){
+                console.log("input bukan angka")
+            } else {
+                var y = prompt("Dikalikan sampai?")
+                if (isNaN(y)){
+                    console.log("input bukan angka")
+                } else {
+                    var n2 = 0;
+                        for (let i = 1; i <= y; i++) {
+                        const n1 = i * x;
+                        console.log(i +" x "+ x +" = "+ n1)
+                        n2 = n2 + n1;
+                    }
+                console.log("Hasil seluruh perkalian = "+ n2)
+                }
+            }
+        } else if (perhitungan == "+") {
+            console.log("Anda memilih penjumlahan")
+            var x = prompt("Dijumlahkan sampai?")
+            if (isNaN(x)){
+                console.log("input bukan angka")
+            } else {
+                let n1 = 0, n2 = 1, nextTerm;
+                console.log("1 : "+ n1);
+                console.log("2 : "+ n2);
+                nextTerm = n1 + n2;
+                for (let i = 3;i <= x; i++) {
+                    console.log(i +" : "+ nextTerm);
+                    n1 = n2;
+                    n2 = nextTerm;
+                    nextTerm = n1 + n2;
+                }
+            }
+        } else {
+            console.log("Masukkan perhitungan yang disupport!")
+        }
+    </script>
+</body>
+</html>

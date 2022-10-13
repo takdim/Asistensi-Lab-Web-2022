@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal3</title>
+</head>
+<body>
+    <script>
+        var input = prompt("Masukkan Input");
+        var spacecount = input.split(' ').length-1
+        console.log("space = "+ spacecount)
+        input = input.replace(/\s/g,'')
+
+        var output = input.split('');
+        var array = {};
+        for (let i = 0; i < output.length; i++) {
+            if (array[output[i]] == undefined) {
+                array[output[i]] = 0;
+            }
+        array[output[i]]++;
+        }
+        for (let i in array) {
+            console.log(i + " = " + array[i])
+        }
+    </script>
+</body>
+</html>
