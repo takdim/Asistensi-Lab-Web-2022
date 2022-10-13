@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+.nav {
+    top: 0;
+    z-index: 10;
+    position: sticky;
+    overflow: hidden;
+    background-color: black;
+
+
+}
+
+.nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+}
+
+.nav img {
+    width: 3vw;
+}
+
+.jumbotron img {
+    width: 100%;
+    position: relative;
+}
+
+.jumbotron h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.288);
+    margin: 3vw;
+    position: absolute;
+    transform: translate(50%, 50%);
+    top: 50%;
+    right: 46%;
+    font-size: 70px;
+    text-shadow: -1px -1px 2px blue, 1px -1px 2px red, -1px 1px 2px orange, 1px 1px 2px green;
+    opacity: 0.9;
+}
+
+.about-container p {
+    text-align: justify;
+}
+
+.about-container table {
+    margin: auto;
+    width: 70%;
+    table-layout: fixed;
+}
+
+.about-container td {
+    padding: 0 2vw;
+    vertical-align: top;
+}
+
+.bottom-container {
+    align-content: center;
+}
+
+.flex-container {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    position: relative;
+}
+
+.image {
+    width: 20%;
+    text-decoration: none;
+}
+
+.image>img {
+    width: 100%;
+    height: 65%;
+}
