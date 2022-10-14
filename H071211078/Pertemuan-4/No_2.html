@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 2</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("Enter a number"));
+        var total = 0;
+        if (!isNaN(n)) {
+            var range = parseInt(prompt("Enter the range"));
+            if (!isNaN(range)) {
+                for (let i = 0; i <= range; i++) {
+                    let sum = (n * range);
+                    console.log(i + " x " + n + " = " + (i * n));
+                    total += sum;
+                }
+                console.log("The total of all multiplications: " + total);
+            } else {
+                console.log("Input number only")
+            }
+        } else {
+            console.log("Input number only")
+        }
+
+    </script>
+</body>
+
+</html>

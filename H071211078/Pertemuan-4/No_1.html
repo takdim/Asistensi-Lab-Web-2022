@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 1</title>
+</head>
+
+<body>
+    <script>
+        let yes = "YES";
+        let no = "NO";
+
+        let name = prompt("What's your name?");
+        if (name.trim().length) {
+            let status = prompt("Ever been in a relationship? YES or NO");
+            let status_input = status.toUpperCase();
+            if (status_input == yes) {
+                let who = prompt("With the opposite sex right? YES or NO");
+                let who_input = who.toUpperCase();
+                if (who_input == yes) {
+                    var how_many = prompt("How many times?");
+                    if (how_many > 1) {
+                        console.log("You fucking normie :)");
+                    } else if (how_many <= 1) {
+                        console.log("Good, don't go any further");
+                    } else if (isNaN(how_many)) {
+                        console.log("Input number only")
+                    }
+                } else if (who_input == no) {
+                    console.log("May God be merciful to you, cause I sure as hell am not");
+                }
+            } else if (status_input == no) {
+                console.log("Good, stay that way");
+            } else {
+                console.log("This is a YES or NO question");
+            }
+        } else {
+            console.log("Just enter some random bullshit, \nI won't even remember it");
+        }
+    </script>
+</body>
+
+</html>
