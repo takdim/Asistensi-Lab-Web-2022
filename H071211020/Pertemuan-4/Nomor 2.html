@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 2</title>
+</head>
+<body>
+    <script>
+        const a = prompt("Perkalian Berapa ?");
+            if (!isNaN(a)) {
+                const b = prompt("mau dikalikan hingga berapa ?");
+                let total = 0;
+                if (!isNaN(b)) {
+                    for (let i = 1; i <= b; i++) {
+                    const c = i * a;
+                    console.log(i + "x" + a + "=" + c);
+
+                    total += i*a;
+                }
+                console.log("Hasil keseluruhan=" + total);
+                } else {
+                    console.log("Masukkan angka pada keduanya!")
+                }
+            }else{ 
+                console.log("Masukkan angka");
+            }
+            
+    </script>
+</body>
+</html>
