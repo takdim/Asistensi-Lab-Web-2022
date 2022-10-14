@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var kalimat = prompt("ketik suatu kalimat");
+if (kalimat) {
+
+    var spacecount = kalimat.split(" ").length - 1
+    console.log("Spasi = " +spacecount);
+    // menghilangkan spasi
+    kalimat = kalimat.replace(/\s/g, "");
+    var chars = kalimat.split("")
+
+
+    while (true) {
+        if (chars.length == 0) {
+            break;
+        }       
+        var findItem = chars[0];
+        let jumlah = 0
+        for (var item of chars) {
+            if (item == findItem) {
+                jumlah++
+            }
+        }
+        console.log(`"${findItem}" = ${jumlah}`);
+        chars = chars.filter((element, index) => element != findItem);
+    }
+}
+</script>
+</body>
+</html>

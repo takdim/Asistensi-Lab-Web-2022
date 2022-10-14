@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let result;
+        var multiple = prompt("Perkalian berapa?");
+	if ((multiple == null) || (multiple == "") || isNaN(multiple)) {
+		console.log("Masukkan inputan yang benar"); 
+	}else if(typeof multiple === 'string' && multiple.trim().length === 0){
+    console.log("Masukkan angka terlebih dahulu");
+	}else {
+		var times = prompt("Ingin dikalikan sampai berapa?");
+		if (times == null || times == "" || isNaN(times)) {
+			console.log("Masukkan inputan yang benar"); 
+		} else {
+			for (let i = 1; i <= times; i++) {
+				 result = i * multiple;
+			     total += result;
+                console.log(i + " x " + multiple + " = " + result); 
+            }
+			console.log("Hasil seluruh perkalian : " + total);
+		}
+	}
+
+    </script>
+</body>
+</html>
