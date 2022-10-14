@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Masukkan Text");
+        var space_count = a.split(" ").length - 1;
+        console.log("spasi = " + space_count);
+        a = a.replace(/\s/g,"");
+        var b = a.split("");
+        var counts = {};
+        
+        for ( var i = 0; i < b.length; i++) {
+            if (counts [b[i]] == undefined) {
+                counts [b[i]] = 0
+            }
+            counts [b[i]] += 1
+        }
+        for (var i in counts) {
+            console.log(i + "=" + counts[i]);
+        }
+    
+
+        
+    </script>
+</body>
+</html>
