@@ -1,0 +1,52 @@
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+		sans-serif;
+	background-image: url("2.jpg");
+	background-size: cover;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.container {
+	width: 25%;
+	padding: 20px;
+	background-color: green;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border: 5px solid;
+}
+
+h1 {
+	color: burlywood;
+  	font-family: 'Cinzel Decorative';
+  	font-style: italic;
+}
+
+#message-el {
+	font-style: italic;
+}
+
+button {
+	color: #016f32;
+	width: 150px;
+	background: goldenrod;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.reset-credit {
+	transform: translateY(-50%);
+}
+
+.input-bet {
+	transform: translateY(-35%);
+}
