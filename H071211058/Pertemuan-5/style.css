@@ -1,0 +1,59 @@
+body{
+    background: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title h1{
+	font-family: 'Silkscreen', cursive;
+	margin-top: 5px;
+	color: rgb(107, 0, 0);
+
+}
+
+.title h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+	color: rgb(107, 0, 0);
+
+}
+
+.box{
+    background: rgb(0, 0, 0);
+    margin: 50px auto;
+    text-align: center;
+    width: 560px;
+    height: 510px;
+    padding: 40px;
+    border-radius: 20px;
+    opacity: 94%;
+}
+
+#start{
+	background-color: rgb(107, 0, 0);
+	color: rgb(0, 0, 0);
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#take{
+	background-color: rgb(107, 0, 0);
+	color: rgb(0, 0, 0);
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#reset{
+	background-color: rgb(107, 0, 0);
+	color: rgb(0, 0, 0);
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.box p{
+	font-family: 'Josefin Sans', sans-serif;
+
+}
