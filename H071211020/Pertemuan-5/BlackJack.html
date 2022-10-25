@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blackjack Game</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="judul">BLACKJACK</h1>
+			<p id="message-el">Apakah anda ingin bermain??</p>
+			<p id="cards-el">Kartu Anda:</p>
+			<p id="sum-el">Sum:</p>
+			<button id="mulai" onclick="startGame()">Mulai</button>
+			<button onclick="newCard()">Ambil Kartu</button>
+			<p id="player-el"></p>
+			<input
+				id="bet"
+				type="number"
+				onfocus="this.value=''"
+				value=""
+				placeholder="Masukkin Bet"
+			/><br /><br />
+			<button onclick="reset()">Reset Credit</button>
+			<script src="index.js"></script>
+		</div>
+	</body>
+</html>
