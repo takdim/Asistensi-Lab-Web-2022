@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blackjack Game</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="judul">BLACK JACK</h1>
+			<p id="message-el">Play A Round?</p>
+			<p id="cards-el">Kartu mu:</p>
+			<p id="sum-el">Jumlah:</p>
+			<button id="mulai" onclick="startGame()">Mulai Permainan</button>
+			<button onclick="newCard()">Ambil Kartu</button>
+			<p id="player-el"></p>
+			<input
+				id="bet"
+				class="input-bet"
+				type="number"
+				onfocus="this.value=''"
+				value=""
+				placeholder="Masukkan Taruhan"
+			/><br /><br />
+			<button class="reset-credit" onclick="reset()">Atur Kembali Uang</button>
+			<script src="script.js"></script>
+		</div>
+	</body>
+</html>
