@@ -1,0 +1,78 @@
+main{
+    background: #dbdbdb;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container{
+    background: white;
+    opacity: 0.9;
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.form-content{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    width: 6cm;
+}
+.text-box{
+    border-bottom: black solid;
+    padding-top: 20px;
+}
+.containerFooter{
+    color: white;
+}
+
+.forget-password{
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+.footer-container{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+
+.heading-container{
+    color: black;
+}
+
+button{
+    margin-top: 5px;
+}
+
+.failed{
+    color: red;
+}
+
+.eye{
+    display: inline;
+}
+
+i{
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.eye i.hide::before{
+    content: '\f06e';
+}
