@@ -1,0 +1,64 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.game {
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+.game h1 {
+    font-size: 65px;
+    font-family: monospace;
+    color: #F1EEE9;
+}
+.game p {
+    font-size: 20px;
+}
+.menu {
+    text-align: center;
+    color: white;
+}
+.menu p {
+    font-size: 20px;
+}
+.menu button{
+    margin: 20px 5px;
+    width: 200px;
+    height: 50px;
+}
+.menu input{
+    height: 30px;
+}
+.menu #StartGame {
+    background-color: yellow;
+    border-color: yellow;
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu #getCard {
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu #getCard:disabled {
+    color: rgba(82, 82, 82, 0.466);
+    background-color: rgba(204, 238, 236, 0.568);
+    border-color: rgba(204, 238, 236, 0.568);
+    font-size: 20px;
+    font-weight: 700;
+}
+.card{
+    display: flex;
+    text-align: center;
+}
+#CHEAT {
+    display: none;
+}
