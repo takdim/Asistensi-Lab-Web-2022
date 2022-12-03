@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar p {
+    color: white;
+}
