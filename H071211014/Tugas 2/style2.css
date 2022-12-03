@@ -1,0 +1,18 @@
+.myNews{
+background-color: cornsilk;
+
+}
+
+.myParagraph{
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px;
+    font-size: 18px;
+}
+
+.myParagraph2{
+    background-color: darksalmon;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 65px;
+    font-size: 18px;
+}
