@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+var kalimat=prompt("Masukkan Kalimat:");
+loop1:
+for(i=0;i<kalimat.length;i++){
+    var jumlah=0;
+    for(j=0;j<kalimat.length;j++){
+        if(kalimat.charAt(i).toLowerCase()==kalimat.charAt(j).toLowerCase()&&i>j)
+        continue loop1;
+        else if (kalimat.charAt(i).toLowerCase()==kalimat.charAt(j).toLowerCase())
+        jumlah+=1;
+    }
+    console.log(kalimat.charAt(i).replace(/\s/g,"spasi")+" = "+jumlah)
+}
+</script>
+</body>
+
+</html>

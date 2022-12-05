@@ -1,0 +1,124 @@
+body, .gradient {
+  background: #00ffa5;
+  margin: 0;
+  padding: 0;
+}
+
+/* ul {
+  list-style-type: none;
+} */
+
+.bg-content {
+  background: rgb(40, 40, 40, 0.8);
+  border-top-left-radius: 300% 200px;
+  border-top-right-radius: 400% 160px;
+  border-bottom-left-radius: 400% 160px;
+  border-bottom-right-radius: 400% 160px;
+  padding: 60px 20px 60px 20px;
+  width: 100%;
+  position: relative;
+}
+
+.portofolio {
+  padding: 60px 20px 60px 20px;
+}
+
+/* .navbar {
+    background: rgba(255, 255, 255,1); 
+    -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+}
+
+.navbar:hover{
+    background-color: cadetblue;
+    cursor:all-scroll;
+} */
+
+.carousel {
+  border-radius: 55px 55px 55px 55px;
+  overflow: hidden;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  background: rgba(40, 40, 40, 0.8);
+  padding: 60px 0 60px 0;
+  border-bottom-right-radius: 300% 800px;
+  border-bottom-left-radius: 300% 800px;
+}
+
+@media (min-width: 1365px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(255, 153, 0);
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.hero .btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgb(21, 12, 12);
+  background: rgb(0, 255, 255);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.hero .btn-get-started:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.item {
+  height: 200px;
+}
+
+.item img {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.card {
+  background: none;
+  border: none;
+}
+
+.card img {
+  width: 60%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  background: rgba(40, 40, 40, 0.8);
+  padding: 60px 0 60px 0;
+  border-top-right-radius: 300% 400px;
+  border-top-left-radius: 300% 400px;
+}

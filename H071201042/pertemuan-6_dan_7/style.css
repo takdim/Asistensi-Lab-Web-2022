@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(./background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#box{
+    background: rgba(255, 255, 255, 0.989);
+    margin: 5px auto;
+    text-align: center;
+    width: 550px;
+    height: 527px;
+    padding: 50px;
+    opacity: 95%;
+    border-radius: 10px;
+
+}
+
+#box > img{
+    width: 150px;
+
+}
+
+#box h1{
+    font-size: 40px;
+    letter-spacing: 3.0px;
+    margin-top: 10px;
+    font-weight: 300;
+
+
+}
+
+#box p{
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+
+}
