@@ -1,0 +1,40 @@
+.myHeader{
+    background-color: aliceblue;
+    color: brown;
+    /* margin: 50px; */
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 50px;
+    text-align: center;
+    display: block;
+}
+
+.myParagraph{
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    padding: 20px;
+    border: 2px solid salmon;
+    border-radius: 5px;
+    color: gray;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.container{
+    display: block;
+    background-color: antiquewhite;
+}
+
+.container h4{
+    border-bottom: 2px solid blue;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.container p{
+    background-color: aliceblue;
+}
