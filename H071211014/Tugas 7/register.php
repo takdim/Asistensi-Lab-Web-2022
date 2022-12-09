@@ -11,22 +11,20 @@ $database = "tugas";
 $koneksi = mysqli_connect($server, $user, $pass, $database) or die(mysqli_error($koneksi));
 
 if ($_POST) {
+    $name= $_POST["nama"];
     $email= $_POST["email"];
     $password= $_POST["password"];
-    $tampil = mysqli_query($koneksi, "SELECT * FROM user WHERE email = '$email' ");
-    $data = mysqli_fetch_array($tampil, MYSQLI_ASSOC);
-    
-    if($data["email"]) {
-        if($data["password"]==$password){
-            $_SESSION["email"]=$data["email"];
-            header('location: http://localhost/tugas7/index.php');
-        }
+    try {
+        $tampil = mysqli_query($koneksi, "INSERT INTO user (nama, email, password) VALUES ('$name', '$email', '$password')");
+        header('location: http://localhost/tugas7/login.php');
+    } catch (\Throwable $th) {
+        var_dump($th);
     }
 }
+    
 
 ?>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -34,7 +32,7 @@ if ($_POST) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Register Now</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -49,9 +47,9 @@ if ($_POST) {
 <body>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
-		<div class="card">
+		<div class="card cardd">
 			<div class="card-header">
-				<h3>Sign In</h3>
+				<h3>Register</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
@@ -59,36 +57,39 @@ if ($_POST) {
 				</div>
 			</div>
 			<div class="card-body">
-				<form action=""method= "POST" >
-					<div class="input-group form-group">
+				<form method="post" action="">
+                <div class="input-group form-group">
 						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
+							<span class="input-group-text"><i class="fas fa-email"></i></span>
 						</div>
-						<input type="email" class="form-control" placeholder="email" name="email">
-						
+						<input type="email" class="form-control" name="email" placeholder="email">
+					</div>
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-email"></i></span>
+						</div>
+						<input type="text" class="form-control" name="nama" placeholder="nama">
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password"  name="password">
+						<input type="password" class="form-control" name="password" placeholder="buat password">
 					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" name="re-password" placeholder="re-password">
 					</div>
+                    
+                    
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
+						<input type="submit" value="Register" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="#">Sign Up</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 </div>
