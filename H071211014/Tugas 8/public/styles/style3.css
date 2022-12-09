@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ====== Box Content ====== */
+.cont {
+    position: absolute;
+    width: 600px;
+    height: min-content;
+    padding: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.cont form .btn {
+    background: #393e92;
+    color: #ffffff;
+}
+
+#fakultas {
+    color: #393e92;
+}
+
