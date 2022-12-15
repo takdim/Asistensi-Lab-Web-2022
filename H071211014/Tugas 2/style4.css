@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    /* width: 100%; */
+    padding: 30px;
+    margin: 0;
+    background-color:darkred;
+    vertical-align: middle;
+    border-bottom: 5px solid;
+
+}
+
+.navbar div{
+    display: inline;
+    margin-left: 30px;
+    
+}
+
+.myBrand{
+    margin-right: 900px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.jumbotron{
+    padding: 240px 200px;
+    background-color: lavender;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    background-image: url("jumbotron.jpg");
+    background-size: cover;
+}
+
+.article{
+    padding: 20px 300px;
+
+}
+ 
+.title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.paragraph{
+    text-align: justify;
+}
+
+.containerKegiatan {
+    display: flex;
+    justify-content: center;
+}
+
+.kegiatan {
+    display: inline-block;
+    width: 200px;
+    margin: 10px 20px;
+}
+
+.myImage {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.containerKegiatan .kegiatan h3{
+    
+    text-align: center;
+}
+
+.containerKegiatan .kegiatan p{
+    text-align: center;
+    font-size: 14px;
+}

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #8f94fb, #5e64df);
+  }
+  
+a {
+    text-decoration: none;
+}
+  
+.btn-con .btn1 {
+  background: #1d204b;
+  color: #ffffff;
+}
+  
+.btn-con .btn1:hover {
+  background: #4247a3;
+}
+  
+.btn-con .btn2 {
+  background: #404052;
+  color: #ffffff;
+}
+
+.btn-con .btn2:hover {
+  background: #6c6e97;
+}
