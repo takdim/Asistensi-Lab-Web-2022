@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="text-center my-4">BlackJack</h1>
+    <div class="container mx-auto text-center" style="width:400px">
+        <h3>Silahkan Pasang Taruhan Anda</h3>
+        <button type="button" class="btn btn-success btn-circle btn-xl" id="100">100</button>
+        <button type="button" class="btn btn-danger btn-circle btn-xl" id="500">500</button>
+        <button type="button" class="btn btn-warning btn-circle btn-xl" id="1000">1k</button>
+        <button type="button" class="btn btn-dark btn-circle btn-xl" id="AllIn">All In</button>
+    </div>
+    <div class="container d-flex justify-content-between">
+        <div>
+            <h3>Jumlah Taruhan</h3>
+            <h3 id="taruhan">0</h3>
+            
+            <button type="button" class="btn btn-primary" id="resetTaruhan">Reset Taruhan</button>
+        </div>
+        
+        <div>
+            <h3>Uang Anda</h3>
+            <h3 id="uang">5000</h3>
+
+            <button type="button" class="btn btn-primary" id="reset" onclick="reset()">Reset Money</button>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        
+        <button type="button" class="btn btn-warning btn-circle btn-xl" id="stand">Stand</button>
+        <h3 id="kondisi"></h3>
+    </div>
+
+    <div class="container d-flex justify-content-center" style="gap:10px">
+        <button type="button" class="btn btn-primary" id="start" onclick="mulai()">Start Game</button>
+        <button type="button" class="btn btn-primary" id="ambil" onclick="newCard()">Take Card</button>
+    </div>
+
+    <div class="container mx-auto text-center" style="width: 800px">
+        <div class="row">
+        <div class="col-6">
+            <h3 id="kartuP">Kartu Anda:</h3>
+            <h3 id="sumP">Sum:25</h3>
+        </div>
+        <div class="col-6">
+            <h3 id="Kbandar">kartu Bandar:</h3>
+            <h3 id="Sbandar">Jumlah kartu Bandar:</h3>
+        </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
